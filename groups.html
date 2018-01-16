@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body>
+    <header class="hidden-sm hidden-md hidden-lg">
+        <div class="searchbox">
+            <form>
+                <h1 class="text-left">Social Network</h1>
+                
+                <div class="dropdown2">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">MENU <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li role="presentation"><a href="profile.php">My hshshsProfile</a></li>
+                        <li class="divider" role="presentation"></li>
+                        <li role="presentation"><a href="user-page.html">Timeline </a></li>
+                        <li role="presentation"><a href="#" id="take-me-messages">Messages </a></li>
+                        <li role="presentation"><a href="notification.html">Notifications </a></li>
+                        <li role="presentation"><a href="#">My Account</a></li>
+                        <li role="presentation"><a href="#">Logout </a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">MENU <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li role="presentation"><a href="profile.php">My Profile</a></li>
+                        <li class="divider" role="presentation"></li>
+                        <li role="presentation"><a href="#">Timeline </a></li>
+                        <li role="presentation"><a href="#" id="take-me-messages">Messages </a></li>
+                        <li role="presentation"><a href="notification.html">Notifications </a></li>
+                        <li role="presentation"><a href="#">My Account</a></li>
+                        <li role="presentation"><a href="#">Logout </a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <hr>
+    </header>
+    <div>
+        <nav class="navbar navbar-default hidden-xs navigation-clean">
+            <div class="container">
+                <div>
+                    <h1 style="float: left; left: 0px; padding-right: 10px">ArgsWing</h1>
+               </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <div class="navbar-form navbar-left" style="width: 40%; padding-top: 16px" >
+                        <div class="searchbox"><i class="glyphicon glyphicon-search"></i>
+                            <input class="form-control sbox" id="getsearchval" type="text" style="width: 100%;"> 
+                            
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav hidden-md hidden-lg navbar-right">
+                        <li role="presentation"><a href="#">My Timeline</a></li>
+                        <li class="dropdown open"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#">User <span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right"  role="menu">
+                                <li role="presentation"><a href="profile.php">My Profile</a></li>
+                                <li class="divider" role="presentation"></li>
+                                <li role="presentation"><a href="#">Timeline </a></li>
+                                <li role="presentation"><a id= "take-me-messages" href="#" onclick="location.href ='messages.html';" >Messages </a></li>
+                                <li role="presentation"><a href="notification.html">Notifications</a></li>
+                                <li role="presentation"><a href="#">My Account</a></li>
+                                <li role="presentation"><a href="#">Logout </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav hidden-xs hidden-sm navbar-right">
+                        <li role="presentation"><a href="user-page.html">Timeline</a></li>
+                        <li role="presentation"><a href="groups.html">Groups</a></li>
+                        <li role="presentation"><a href="#" onclick="location.href ='messages.html';">Messages</a></li>
+                        
+
+
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" id="notification-back" data-toggle="dropdown" aria-expanded="true" href="#" >Notification <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-right"  id="notificationset" role="menu" style="width: 400px; background-color: pink;" >
+                                
+                                
+                            </ul>
+                        </li>
+
+
+
+
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">User <span class="caret"></span></a>
+                       
+                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                <li role="presentation"><a href="profile.php">My Profile</a></li>
+                                <li class="divider" role="presentation"></li>
+                                <li role="presentation"><a href="user-page.html">Timeline </a></li>
+                                <li role="presentation"><a id="take-me-messages" href="#"onclick="location.href ='messages.html';">Messages </a></li>
+                                <li role="presentation"><a href="notification.html">Notifications </a></li>
+                                <li role="presentation"><a href="profile.php">My Account</a></li>
+                                <li role="presentation"><a href="#">Logout </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         </div>
+    <div class="container">
+        <h1>Group Activity </h1>
+        <button class="btn btn-default" type="button" style="width:30%;background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:5px 0px 16px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" onclick= "showNewGroupModal()">Start a New Group</button>
+        <button class="btn btn-default" type="button" style="width:30%;background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:5px 0px 16px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" onclick= "groupinvitationsrequest()">View Group Invitations</button>
+
+
+
+        
+
+
+        <div class="modal fade" id="invitationmodel2" role="dialog" tabindex="-1" style="padding-top:100px;">
+        <div class="modal-dialog" role="document" style="height: 60%;width: 60%">
+            <div class="modal-content" style="height: 100%;width: 100%">
+                <div class="modal-header">
+                    
+                    <h4 class="modal-title">Your Invitations</h4></div>
+                <div style="height: 70%; overflow-y: auto; padding-left: 18px;">
+                        
+                                <h4>Invitations:</h4>
+                                <div id = "invitationlist"></div>
+                                
+                                
+                                      
+                                    
+                               
+                                
+
+                 </div>
+                <div class="modal-footer" style="height: 100px">
+                
+                                    
+                        
+                    
+                    <button class="btn btn-default" id = "closeinvitationlist" type="button" style="background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:0px 0px 6px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="modal fade" id="newgroup" role="dialog" tabindex="-1" style="padding-top:100px;">
+        <div class="modal-dialog" role="document" style="height: 60%;width: 60%">
+            <div class="modal-content" style="height: 100%;width: 100%">
+                <div class="modal-header">
+                    
+                    <h4 class="modal-title">New Group</h4></div>
+                <div style="height: 70%; overflow-y: auto; padding-left: 18px;">
+                        
+                                <h4>Title:</h4>
+                                <input class="form-control sbox2" id="grouptitle" type="text" style="width: 95%">
+                                
+                                      
+                                    
+                               
+                                
+
+                 </div>
+                <div class="modal-footer" style="height: 100px">
+                
+                                    
+                        
+                    <input  name="post" id="create-group3" value="CREATE" class="btn btn-default" type="button" style="background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:0px 0px 6px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" data-bs-hover-animate="shake">
+                    <button class="btn btn-default" id = "closepost" type="button" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="modal fade" id="invited-users" role="dialog" tabindex="-1" style="padding-top:100px;">
+        <div class="modal-dialog" role="document" style="height: 60%;width: 60%">
+            <div class="modal-content" style="height: 100%;width: 100%">
+                <div class="modal-header">
+                    
+                    <h4 class="modal-title">Send Invitations</h4></div>
+                <div style="height: 70%; overflow-y: auto; padding-left: 18px;">
+                        
+                                <h4>Invite Users:</h4>
+                                    <div class="searchbox"><i class="glyphicon glyphicon-search" style=""></i>
+                                            <textarea class="form-control sbox3" id="getsearchval"  style="width: 95%; border-radius: 5px; height:35px; text-indent: 12px"></textarea> <ul class="list-group autocomplete" style="position:absolute;width:60%; z-index:100">
+                                            </ul>
+
+                                    </div>
+                                <h4>Invitations Sent:</h4> 
+                                <div style="max-height: 50%; overflow-x: auto" id="invited-users2">
+                                    
+                                </div>   
+                                    
+                               
+                                
+
+                 </div>
+                <div class="modal-footer" style="height: 100px">
+                
+                                    
+                        
+                    
+                    <button class="btn btn-default" id = "closeinvitesending" type="button" style="background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:0px 0px 6px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="modal fade" id="membermodal" role="dialog" tabindex="-1" style="padding-top:100px;">
+        <div class="modal-dialog" role="document" style="height: 40%;width: 30%">
+            <div class="modal-content" style="height: 100%;width: 100%">
+                <div class="modal-header">
+                    
+                    <h4 class="modal-title">Active Members</h4></div>
+                <div id ="memberofGroup" style="height: 60%; overflow-y: auto; padding-left: 18px;">
+                          
+                                    
+                               
+                                
+
+                 </div>
+                <div class="modal-footer" style="height: 100px">
+                
+                                    
+                        
+                    
+                    <button class="btn btn-default" id = "closemembermodel" type="button" style="background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:0px 0px 6px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+<div class="modal fade" id="newpost" role="dialog" tabindex="-1" style="padding-top:100px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <h4 class="modal-title">New Post</h4></div>
+                <div style="max-height: 400px; overflow-y: auto">
+                        <form action="groups.html" method="POST" enctype="multipart/form-data">
+                                <textarea name="postbody" id= "post-body-content" rows="15" cols="74" style="padding-bottom:25px"></textarea>
+                                
+                                
+
+                 </div>
+                <div class="modal-footer" style="height: 100px">
+                <strong style="float: left">Topics: &nbsp; &nbsp; </strong>
+                                    <select name="select1" id="myselect" style="float: left;" onmousedown="if(this.options.length>6){this.size=6;}"  onchange='this.size=0;' onblur="this.size=0;">
+                                    <option value="0">Please Pick a Topic</option>
+                                    <option value="finance">Finance</option>
+                                    <option value="politics">Politics</option>
+                                    <option value="news">News</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="ai">AI</option>
+                                    <option value="programming">Programming</option>
+                                    <option value="movies">Movies & TV</option>
+                                    <option value="sports">Sports</option>
+                                    <option value="video-games">Video-games</option>
+                                    <option value="music">Music</option>
+                                    <option value="fashion">Fashion</option>
+                                    <option value="food">Food</option>
+                                    <option value="astronomy">Astronomy</option>
+                                    <option value="science">Science</option>
+                                    <option value="history">History</option>
+                                    <option value="human-rights">Human-Rights</option>
+                                    <option value="philosophy">Philosophy</option>
+                                    <option value="social">Social</option>
+                                    <option value="job-market">Job-Market</option>
+                                    <option value="start-ups">Start-Ups</option>
+                                    <option value="travel">Travel</option>
+                                </select>
+                        
+                    <input  name="post" id="post-content" value="Post" class="btn btn-default" type="button" style="background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:0px 0px 6px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" data-bs-hover-animate="shake">
+                    <button class="btn btn-default" id = "closepost" type="button" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list-group" id="groups">
+                    Groups</ul>
+                </div>
+                <div class="col-md-9" style="position:relative;">
+                    <ul class="list-group" id="boty"><div id = "groupbuttons"></div>
+                        <li class="list-group-item" id="group-content" style="overflow:auto;height:800px;width:120%;margin-bottom:55px;">
+                        </li>
+
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="newargument" role="dialog" tabindex="-1" style="padding-top:100px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <h4 class="modal-title">New Argument</h4></div>
+                <div style="max-height: 400px; overflow-y: auto; padding-left: 3px">
+                        <form action="groups.html" method="POST" enctype="multipart/form-data">
+                                <textarea name="argumenttitle" id="argumenttitlecontent" rows="1" cols="73"  style="padding-bottom: 20px; border-color: blue;"></textarea>
+                               <textarea name="argumentbody" id="argumentbodycontent" rows="15" cols="73" style="padding-bottom: 25px; border-color: blue;"></textarea>
+                 </div>
+                <div class="modal-footer" style="height: 100px">
+                 <strong style="float: left">Swing: &nbsp; &nbsp; </strong>
+                                    <select name="select" id="myargumentselect" style="float: left" onmousedown="if(this.options.length>6){this.size=;}"  onchange='this.size=0;' onblur="this.size=0;">
+                                    <option value="0">Which Side Are Swinging With?</option>
+                                    <option value="neutral">Neutral</option>
+                                    <option value="with">With</option>
+                                    <option value="against">Against</option>
+                                    </select>
+                <input  name="post" id="argument-content-post" value="Post" class="btn btn-default" type="button" style="background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:0px 0px 6px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" data-bs-hover-animate="shake">
+                    <button class="btn btn-default" id = "closeargument" type="button" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <div class="timelineposts">
+
+        </div>
+    </div>
+<div class="modal fade" id="commentsmodal" role="dialog" tabindex="-1" style="padding-top:100px;">
+        <div class="modal-dialog" role="document" style="width: 80%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <div class="row"">
+                <div class="col-md-3"  >
+                    <ul class="list-group" id="users2" style="overflow-y: scroll;display: inline-block; max-height: 500px;">
+                    Arguments</ul>
+                </div>
+                <div class="col-md-9" style="position:relative;">
+                    <ul class="list-group">
+                        <blockquote class="list-group-item" id="m2" style="overflow:auto;height:500px;margin-bottom:55px;">
+                        No Arguments</blockquote>
+                    </ul>
+                    <div id="wrapper">
+                    </div>
+                    
+          
+       
+   </div>
+   </div>
+    
+    
+    
+    
+    <script src="jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src = "jquery.timeago.js"></script>
+    <script type="text/javascript">
+    $("#getsearchval").keyup(function(event){
+    if(event.keyCode == 13){
+     location.href = "searcheng.php?query="+$("#getsearchval").val()+"";
+    }
+});
+
+    function groupinvitationsrequest(){
+        $('#invitationmodel2').modal('show');
+    }
+    function resetall(){
+        $('#users').empty();
+        $('#m').empty();
+        $('.getcomments').empty();
+    }
+    function showNewArgumentModal(){
+        $('#newargument').modal('show')
+    }
+    function showNewPostModal(){
+    $('#newpost').modal('show')
+    }
+    function showMemberModal(){
+        $('#membermodal').modal('show')
+    }
+    function showNewGroupModal(){
+    $('#newgroup').modal('show')
+    }
+    function showInviteModal(){
+    $('#invited-users').modal('show')
+    }
+    group = window.location.hash.split('#')[1];
+
+    $(document).ready(function() {
+
+        $('#notification-back').click(function(){
+         $('#notificationset').empty();
+        $.ajax({
+                type: "GET",
+                url: "api/notifications1",
+                processData: false,
+                contentType: "application/json",
+                data: '',
+                success: function(r){
+                   
+                    var r = JSON.parse(r);
+                    $('#notificationset').append('<li role = "presentation"><h1 style="font-size: 17px;color:black; text-align: center;">Your Notifications</h1><hr style ="color:red;"><hr></li>');
+                    $.each(r, function(index) {
+
+                        $('#notificationset').append(
+                           
+                            '<li role = "presentation"><blockquote style="font-size: 14px;color:black; background-color:pink;border-color:black;opacity:0.5;">'+r[index].extra+' ~ '+jQuery.timeago(r[index].date)+'</blockquote></li>')
+                    
+                    })
+
+                    $('#notificationset').append('<li role = presentation><a href="notification.html" style="display: block;text-align: center;">See More!</a></li>');
+                },
+                error: function(r){
+                console.log(r)
+                }
+            });
+    })
+       $.ajax({
+                type: "GET",
+                url: "api/getallmembers?group="+group,
+                processData: false,
+                contentType: "application/json",
+                data: '',
+                success: function(r) {
+                    console.log(r);
+                    var res = JSON.parse(r);
+                    $.each(res, function(index) {
+                        $('#memberofGroup').html(
+                            $('#memberofGroup').html()+ '<div style="padding-top:2px; width:90%;"><ol style="font-size: 25px;color:black; background-color:pink; width:100%;border-color:black;opacity:0.5;">'+(index+1)+') '+res[index].username+'</ol></div>')
+                    
+
+                    }) 
+                    $('#memberofGroup').append('</div>');
+                },
+                error: function(r){
+                    console.log(r);
+                }    
+            })
+
+
+
+
+        $('#create-group3').click(function(){
+            
+            
+
+            $.ajax({
+                type: "POST",
+                url: "api/creategroup",
+                processData: false,
+                contentType: "application/json",
+                data: '{"title" : "'+$('#grouptitle').val()+'"}',
+                success: function(r) {
+                    location.reload()
+                    console.log(r);
+                },
+                error: function(r){
+                    console.log(r);
+                }    
+            })
+        })
+        $.ajax({
+            type: "GET",
+            url: "api/getallinvitations",
+            processData: false,
+            contentType: "application/json",
+            data: '',
+            success: function(r) {
+                var res = JSON.parse(r);
+                $.each(res, function(index) {
+                    $('#invitationlist').html('<div id = "'+res[index].id+'"><blockquote> ~ '+res[index].username+' INVITED TO A GROUP: '+res[index].title+'</blockquote><button class="btn btn-default" type="button" data-idaccept="'+res[index].id+'" style="width:20%;background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:5px 0px 16px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;">Accept</button>  <button class="btn btn-default" type="button" data-idreject="'+res[index].id+'" style="width:20%;background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:5px 0px 16px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;">Decline</button><hr><div>');
+                    $('[data-idaccept]').click(function(){
+                        var buttonid = $(this).attr('data-idaccept');
+                        $.ajax({
+                            type: "POST",
+                            url: "api/acceptinvite?id="+$(this).attr('data-idaccept'),
+                            processData: false,
+                            contentType: "application/json",
+                            data: '',
+                            success: function(r) {
+                                $('#'+buttonid+'').html('<blockquote>You Have Successfully Joined The Group</blockquote>')
+                                $('#closeinvitationlist').click(function(){
+                                    $('#invitationlist').empty();
+                                })
+                            },
+                            error: function(r){
+                                console.log(r);
+                            }    
+                        })
+                    })
+                    $('[data-idreject]').click(function(){
+                        var buttonid = $(this).attr('data-idreject');
+                        $.ajax({
+                            type: "POST",
+                            url: "api/rejectinvite?id="+$(this).attr('data-idreject'),
+                            processData: false,
+                            contentType: "application/json",
+                            data: '',
+                            success: function(r) {
+                                $('#'+buttonid+'').html('<blockquote>You Have Successfully Declined The Invitation</blockquote>')
+                                $('#closeinvitationlist').click(function(){
+                                    $('#invitationlist').empty();
+                                })
+                            },
+                            error: function(r){
+                                console.log(r);
+                            }    
+                        })
+                    })
+
+
+                })
+            }    
+        })
+
+        $('.sbox3').keyup(function() {
+            
+            if ($(this).val() == ""){
+               $('.autocomplete').empty();
+            }else{
+                        $('.autocomplete').html('');
+                        $.ajax({
+                                type: "GET",
+                                url: "api/searchgroupuser?query=" + $(this).val(),
+                                processData: false,
+                                contentType: "application/json",
+                                data: '',
+                                success: function(r) {
+                                        r = JSON.parse(r)
+                                        for (var i = 0; i < r.length; i++) {
+                                                console.log(r[i].userName);
+                                                $('.autocomplete').html(
+                                                        $('.autocomplete').html() +
+                                                        '<button class="list-group-item" data-id6="'+r[i].ID+'">'+r[i].userName+' ~ Click To Invite</button>'
+                                                )
+                                                $('[data-id6]').click(function(){
+                                                    $.ajax({
+                                                        type: "POST",
+                                                        url: 'api/invitegroupuser?group='+group+'&userid='+$(this).attr('data-id6'),
+                                                        processData: false,
+                                                        contentType: "application/json",
+                                                        data: '',
+                                                        success: function(r) {
+                                                            console.log(r);
+                                                            var res = JSON.parse(r);
+                                                            $('.autocomplete').empty();
+                                                            $('#invited-users2').append('<blockquote>'+res.username+'</blockquote>');
+                                                            $('#closeinvitesending').click(function(){
+                                                                $('#invited-users2').empty();
+                                                            })
+
+                                                        }    
+                                                    })
+                                                })    
+                                                
+                                        }
+                                        
+                                },
+                                error: function(r) {
+                                        console.log(r)
+                                }
+                        })
+                }        
+                })
+
+
+
+
+
+        $(window).on('hashchange', function(){
+            location.reload();
+        })
+           
+        $.ajax({
+                type: "GET",
+                url: "api/getgroups",
+                processData: false,
+                contentType: "application/json",
+                data: '',
+                success: function(r){
+                   var r = JSON.parse(r);
+                    $('#groups').empty();
+                    $('#groups').append('<h3>Groups</h3>');
+                    $.each(r, function(index) {
+                        
+                        $('#groups').append('<button id="groups'+r[index].id+'"  data-id='+r[index].id+' class="list-group-item" style="background-color:#fff;"><span style="font-size:16px;"><strong>'+r[index].title+'</strong></span></button>')
+                        $('#groups'+r[index].id).click(function() {
+                            window.location = 'groups.html#' + $(this).attr('data-id')
+                            
+                        })
+                    })
+
+                    
+                },
+                error: function(r){
+                console.log(r)
+                }
+        });
+
+        $('#post-content').click(function(){
+             if (!($('#myselect').val()==="0" || $("#post-body-content").val() === '')){
+                $.ajax({
+                    type: "POST",
+                    url: "api/creategrouppost?group="+group,
+                    processData: false,
+                    contentType: "application/json",
+                    data: '{"post" : "'+$("#post-body-content").val()+'", "topic": "'+$("#myselect").val()+'"}',
+                    success: function(r){
+                        location.reload();
+                    },
+                    error: function(r){
+                    console.log(r)
+                    }
+                });
+            }else{
+               setTimeout(function() {
+                 $('[data-bs-hover-animate]').removeClass('animated ' + $('[data-bs-hover-animate]').attr('data-bs-hover-animate'));
+                 }, 2000)
+                $('[data-bs-hover-animate]').addClass('animated ' + $('[data-bs-hover-animate]').attr('data-bs-hover-animate'))
+                                   
+            }
+        });
+
+
+        $.ajax({
+            type: "GET",
+            url: "api/getgrouppost?group="+group,
+            processData: false,
+            contentType: "application/json",
+            data: '',
+            success: function(r) {
+                $('#group-content').html('<button class="btn btn-default" type="button" style="width:30%;background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:5px 0px 16px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" onclick= "showNewPostModal()">NEW POST</button>  <button class="btn btn-default" id="invitepeoplebut" type="button" style="width:30%;background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:5px 0px 16px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" onclick= "showInviteModal()">Invite Users To Your Group!</button>  <button class="btn btn-default" id="groupmembers" type="button" style="width:30%;background-image:url(&quot;none&quot;);background-color:#da052b;color:#fff;padding:16px 32px;margin:5px 0px 16px;border:none;box-shadow:none;text-shadow:none;opacity:0.9;text-transform:uppercase;font-weight:bold;font-size:13px;letter-spacing:0.4px;line-height:1;outline:none;" onclick= "showMemberModal()">Members</button><h2>Group Posts</h2>')
+                var posts = JSON.parse(r)
+                    
+                $.each(posts, function(index) {
+                    $('#group-content').html(
+                             $('#group-content').html()+ '<li class="list-group-item" id="'+posts[index].PostId+'"><blockquote><p>'+posts[index].PostBody+'</p><footer>Posted by '+posts[index].PostedBy+'  ~ '+jQuery.timeago(posts[index].PostDate)+'<br><br><button class="btn btn-default" data-id2 ="'+posts[index].PostId+'" type="button" style="color:#eb3b60;background-image:url(&quot;none&quot;);background-color:transparent;"> <i class="glyphicon glyphicon-heart" data-aos="flip-right"></i><span> '+posts[index].Likes+' Likes</span></button><button class="btn btn-default" data-dislikeid = "'+posts[index].PostId+'" type="button" style="color:black;background-image:url(&quot;none&quot;);background-color:transparent;"><i class="glyphicon glyphicon-heart" data-aos="flip-right" style="color:#black;"></i><span style="color:black;"> '+posts[index].Dislikes+' Dislikes </span></button></button><button class="btn btn-default comment" type="button" data-postid="'+posts[index].PostId+'" style="color:#eb3b60;background-image:url(&quot;none&quot;);background-color:transparent;"><i class="glyphicon glyphicon-flash" style="color:#f9d616;"></i><span style="color:#f9d616;"> Arguments</span></button></button><button class="btn btn-default comment" type="button" onclick= "showNewArgumentModal()" data-argumentid="'+posts[index].PostId+'" style="color:#009933;background-image:url(&quot;none&quot;);background-color:transparent;"><i class="glyphicon glyphicon-pencil" style="color:#009933;"></i><span style="color:#009933;"> Make An Argument</span></button></footer></blockquote></li>')
+                    
+
+                    $('[data-argumentid]').click(function(){
+                        var postid = $(this).attr('data-argumentid');
+                        $('#argument-content-post').click(function(){
+                            if (!($('#myargumentselect').val()==="0" || $("#argumentbodycontent").val() === '' || $("#argumenttitlecontent").val() === '')){
+                                $.ajax({
+                                    type: "POST",
+                                    url: "api/creategroupargument",
+                                    processData: false,
+                                    contentType: "application/json",
+                                    data: '{"title" : "'+$("#argumenttitlecontent").val()+'", "body" : "'+$("#argumentbodycontent").val()+'", "postid" : "'+postid+'", "swing": "'+$("#myargumentselect").val()+'"}',
+                                    success: function(r){
+                                    location.reload(); 
+                                    //i dont know if it is working but you have to scroll down to that specific argument after th
+                                    $(window).scrollTop(postid.offset().top).scrollLeft(postid.offset().left);   
+                                    console.log(r);
+                                    },
+                                    error: function(r){
+                                    console.log(r)
+                                    }
+                                });
+                            }else{
+                                setTimeout(function() {
+                                $('[data-bs-hover-animate]').removeClass('animated ' + $('[data-bs-hover-animate]').attr('data-bs-hover-animate'));
+                                }, 2000)
+                                $('[data-bs-hover-animate]').addClass('animated ' + $('[data-bs-hover-animate]').attr('data-bs-hover-animate'))
+                                   
+                            }
+                        })    
+
+                    })
+
+                     $('[data-id2]').click(function(){
+                                var buttonid = $(this).attr('data-id2');
+
+                                $.ajax({
+                                    type: "POST",
+                                    url: "api/grouplikes?id=" + $(this).attr('data-id2'),
+                                    processData: false,
+                                    contentType: "application/json",
+                                    data: '',
+                                    success: function(r){
+                                        var res= JSON.parse(r);
+                                         $("[data-id2 = '"+buttonid+"']").html('<i class="glyphicon glyphicon-heart" data-aos="flip-right"></i><span> '+res.Likes+' Likes</span>')
+                                        console.log(r);
+                                    },
+                                    error: function(r){
+                                        console.log(r)
+                                    }
+                                });
+                    })
+
+                      $('[data-dislikeid]').click(function(){
+                        var buttonid = $(this).attr('data-dislikeid');
+                                $.ajax({
+                                    type: "POST",
+                                    url: "api/groupdislikes?id=" + $(this).attr('data-dislikeid'),
+                                    processData: false,
+                                    contentType: "application/json",
+                                    data: '',
+                                    success: function(r){
+                                        var res= JSON.parse(r);
+                                         $("[data-dislikeid = '"+buttonid+"']").html('<i class="glyphicon glyphicon-heart" data-aos="flip-right"></i><span> '+res.Dislikes+' Dislikes</span>')
+                                        console.log(r);
+                                    },
+                                    error: function(r){
+                                        console.log(r)
+                                    }
+                                });
+                    })
+
+
+                    $('[data-postid]').click(function(){
+                         $('#users2').html('No Arguments');
+                         $('#m2').empty();
+                        var buttonid = $(this).attr('data-postid');
+                            $.ajax({
+                                type: "GET",
+                                url: "api/groupargumentposts?postid=" + $(this).attr('data-postid'),
+                                processData: false,
+                                contentType: "application/json",
+                                data: '',
+                                success: function(r){
+                                //$('#users').empty();
+                                showCommentsModal();
+                                    
+                                    var r = JSON.parse(r);
+                                     $('#users2').empty();
+                                    
+                                    $.each(r, function(index){
+                                        $('#users2').html(
+                                            $('#users2').html()+
+                                             '<button id="user'+index+'"  data-id='+r[index].id+' class="list-group-item" style="display: inline-block"><span style="font-size:14px; width=20px; word-wrap: break-word; display: inline-block">'+r[index].title+'<br><h5 style="text-transform:capitalize;">Swing: '+r[index].status+'</h5></span></button>')
+
+                                                $('[data-id]').click(function() {
+                                                   $.ajax({
+                                                        type:"GET",
+                                                        url: "api/getgrouparguments?postid="+ $(this).attr('data-id'),
+                                                        processData: false,
+                                                        contentType: "application/json",
+                                                        data: '',
+                                                        success: function(r){
+                                                            
+                                                            var r = JSON.parse(r);     
+                                                            $.each(r, function(index){
+                                                                $('#m2').html(
+                                                                    '<div><h3>'+r[index].title+'</h3><p friction-id='+r[index].id+'style= "padding: 10px;width:50%;min-height:40px;border-radius:10px;">'+r[index].body+'</p><br></div><hr><footer>Posted BY: '+r[index].username+ '  ~ '+jQuery.timeago(r[index].date)+'<br><button class="btn btn-default comment" type="button" data2-postid="'+r[index].id+'" style="color:#eb3b60;background-image:url(&quot;none&quot;);background-color:transparent;"><i class="glyphicon glyphicon-flash" style="color:#f9d616;"></i><span style="color:#f9d616;"> Comments</span></button><button class="btn btn-default" data-arglikeid = '+r[index].id+' type="button" style="color:#eb3b60;background-image:url(&quot;none&quot;);background-color:transparent;"> <i class="glyphicon glyphicon-heart" data-aos="flip-right"></i><span>'+r[index].likes+' Likes</span></button><button class="btn btn-default" data-argdislikeid = '+r[index].id+' type="button" style="color:black;background-image:url(&quot;none&quot;);background-color:transparent;"><i class="glyphicon glyphicon-heart" data-aos="flip-right" style="color:#black;"></i><span style="color:black;"> '+r[index].dislike+' Dislikes </span></button></footer><div style = "color:#FFF; padding:6 px;user-select:none;"><p>'+r[index]+'</p></div><div class ="getcomments" style = "font-size = 60px;"></div>')
+                                                                $('#wrapper').html('<button class="btn btn-default msg-button-send" id="sendcomment" data4-id = '+r[index].id+' type="button" >SEND </button><div class="message-input-div"><input id="commentcontent" type="text" style="width:100%;height:45px;outline:none;font-size:16px;"></div><div class="modal-footer"><button class="btn btn-default" onclick="resetall()" type="button" data-dismiss="modal">Close</button></div>')
+                                                                
+                                                                
+                                                                
+                                                                $('[data-argdislikeid]').click(function(){
+                                                                    var buttonid = $(this).attr('data-argdislikeid');
+                                                                        $.ajax({
+                                                                            type: "POST",
+                                                                            url: "api/groupargsdislikes?id=" + $(this).attr('data-argdislikeid'),
+                                                                            processData: false,
+                                                                            contentType: "application/json",
+                                                                            data: '',
+                                                                            success: function(r){
+                                                                                var res= JSON.parse(r);
+                                                                                $("[data-argdislikeid = '"+buttonid+"']").html('<i class="glyphicon glyphicon-heart" data-aos="flip-right"></i><span> '+res.Dislikes+' Likes</span>')
+                                                                                console.log(r);
+                                                                            },
+                                                                            error: function(r){
+                                                                            console.log(r)
+                                                                            }
+                                                                        });
+                                                                })
+
+                                                                 $('[data-arglikeid]').click(function(){
+                                                                    var buttonid = $(this).attr('data-arglikeid');
+                                                                        $.ajax({
+                                                                            type: "POST",
+                                                                            url: "api/groupargslikes?id=" + $(this).attr('data-arglikeid'),
+                                                                            processData: false,
+                                                                            contentType: "application/json",
+                                                                            data: '',
+                                                                            success: function(r){
+                                                                                var res= JSON.parse(r);
+                                                                                $("[data-arglikeid = '"+buttonid+"']").html('<i class="glyphicon glyphicon-heart" data-aos="flip-right"></i><span> '+res.Likes+' Likes</span>')
+                                                                                console.log(r);
+                                                                            },
+                                                                            error: function(r){
+                                                                            console.log(r)
+                                                                            }
+                                                                        });
+                                                                })
+
+
+
+
+                                                                $('[data4-id]').click(function(){
+                                                                    $('[data2-postid]').click();
+                                                                    var body = $('#commentcontent').val();
+                                                                    var argumentid =  $(this).attr('data4-id');
+                                                                        $.ajax({
+                                                                            type:"POST",
+                                                                            url: "api/groupargumentcomment",
+                                                                            processData: false,
+                                                                            contentType: "application/json",
+                                                                            data:'{"comment" : "'+$("#commentcontent").val()+'", "argumentid" : "'+argumentid+'"}',
+                                                                            success: function(r){
+                                                                                $('.getcomments').append(('<hr><blockquote style = "font-size=60px">'+$("#commentcontent").val()+'</blockquote>'));
+                                                                                
+                                                                                $('[data2-postid]').dblclick();
+                                                                                $('[data2-postid]').click();
+                                                                                var objDiv = document.getElementById("m2");
+                                                                                objDiv.scrollTop = objDiv.scrollHeight;
+                                                                                console.log(r);
+                                                                            },
+                                                                            error: function(r){
+                                                                            console.log(r);
+                                                                            }
+                                                                        })
+                                                                })
+                                                                
+                                                                
+                                                                $('[data2-postid]').click(function(){
+                                                                    $('.getcomments').show();
+                                                                       
+                                                                        $.ajax({
+                                                                            type:"GET",
+                                                                            url: "api/getgroupargumentcomments?postid="+ $(this).attr('data2-postid'),
+                                                                            processData: false,
+                                                                            contentType: "application/json",
+                                                                            data: '',
+                                                                            success: function(r){
+                                                                                $('.getcomments').empty();
+                                                                                try {
+                                                                                    var r = JSON.parse(r);
+                                                                                    $.each(r, function(index){
+                                                                                        $('.getcomments').html(
+                                                                                            $('.getcomments').html()+
+                                                                                            ('<hr><blockquote style = "font-size=60px"> ~ '+r[index].username+' : '+r[index].comment+'</blockquote>')
+                                                                                        )    
+                                                                                    })
+                                                                                }catch (e){
+                                                                                    
+                                                                                }     
+                                                                                
+                                                                            },
+                                                                            error:function(r){
+                                                                               
+                                                                            }
+                                                                        })
+                                                                        $('[data2-postid]').dblclick(function(){
+                                                                            $('.getcomments').hide();
+                                                                        })
+                                                                })
+
+                                                            })
+                                                        },
+                                                        error: function(r){
+                                                            
+                                                        }
+                                                    });
+
+                                                    
+                                                });
+                                     })
+                                },
+                                error: function(r){
+                                
+                                
+                                
+                                }  
+                            });
+                    });
+                            
+                    
+
+                            
+                });
+
+            },
+            error: function(r){
+                console.log(r);
+            }
+        });
+});
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function showCommentsModal(){
+        $('#commentsmodal').modal('show')
+        
+        
+    }
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
