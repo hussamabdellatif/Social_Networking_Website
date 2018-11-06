@@ -2,7 +2,7 @@
 
 require_once("DB.php");
 //handle requests..we need to handle which kind of request we recieved and it is done with this method below
-$db = new DB("127.0.0.1", "proveMeWrong", "root", "00039");
+$db = new DB("127.0.0.1", "proveMeWrong", "root", "000");
 
 function time_elapsed_string($datetime, $full = false) {
     $now = new DateTime;
